@@ -1,0 +1,124 @@
+---
+import content from '../data/content.json';
+---
+<section id="projects" class="section">
+  <div class="container">
+    <h2 class="section-title">Featured Projects</h2>
+    <div class="projects-grid">
+      {content.projects.map((project) => (
+        <div class="project-card glass">
+          {project.image ? (
+            <div class="project-image-placeholder">
+              <img src={project.image} alt={project.title} loading="lazy" />
+            </div>
+          ) : (
+            <div class="project-image-placeholder">
+              <span>Project Image / Screenshot</span>
+            </div>
+          )}
+          <div class="flex justify-between items-start mb-4">
+            <h3 class="project-title m-0">{project.title}</h3>
+          </div>
+          <p class="project-desc">{project.description}</p>
+          <div class="project-impact">
+            <strong>Impact:</strong> {project.impact}
+          </div>
+          <div class="project-tech flex gap-4 mb-4">
+            {project.tech.map((tech) => (
+              <span class="tech-tag">{tech}</span>
+            ))}
+          </div>
+          <div class="project-links flex gap-4">
+            {project.links && project.links.map((link) => (
+              <a href={link.url} target="_blank" rel="noopener noreferrer" class="project-link" aria-label={`Visit ${link.label}`}>
+                <span style="font-size: 0.85rem; font-weight: 500; display: flex; align-items: center; gap: 0.25rem;">
+                  {link.label}
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </span>
+              </a>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  .project-card {
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+  }
+  .project-title {
+    font-size: 1.5rem;
+  }
+  .project-image-placeholder {
+    width: 100%;
+    height: 200px;
+    background: var(--bg-secondary);
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    border: 1px dashed var(--border-color);
+  }
+  .project-image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+  .m-0 {
+    margin: 0;
+  }
+  .mb-4 {
+    margin-bottom: 1rem;
+  }
+  .project-link {
+    color: var(--text-secondary);
+    transition: color 0.2s ease, transform 0.2s ease;
+    display: inline-flex;
+  }
+  .project-link:hover {
+    color: var(--accent-primary);
+    transform: translateY(-2px);
+  }
+  .project-desc {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+  }
+  .project-impact {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
+    border-left: 3px solid var(--accent-primary);
+  }
+  .project-tech {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .tech-tag {
+    font-size: 0.8rem;
+    padding: 0.25rem 0.75rem;
+    background: var(--bg-secondary);
+    border-radius: 9999px;
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+  }
+</style>

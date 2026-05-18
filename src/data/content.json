@@ -1,0 +1,87 @@
+{
+  "hero": {
+    "titleLine1": "Full-Stack Developer",
+    "titleLine2": "Building & Shipping Fast",
+    "subtitle": "I am a Full-Stack Developer passionate about building robust, scalable platforms and leveraging AI workflows to ship high-quality products faster."
+  },
+  "experiences": [
+    {
+      "role": "Software Architect & Full-Stack Developer",
+      "company": "Independent / Project-Based",
+      "period": "3+ Years",
+      "bullets": [
+        "Architected and deployed scalable web applications using React, TypeScript, and Tailwind CSS, strictly adhering to SOLID principles and MVC architecture.",
+        "Led critical backend migrations, successfully transitioning Node.js/Express infrastructure from Render to Supabase Edge Functions for significantly improved latency and scalability.",
+        "Leveraged Google AI Studio and Gemini models to accelerate development, generating complex database schemas and optimizing application logic.",
+        "Applied structural design patterns (Repository and Strategy) to develop localized calculation engines and interactive educational platforms."
+      ]
+    },
+    {
+      "role": "Computer aided designer",
+      "company": "Various Global Projects",
+      "period": "10+ Years",
+      "bullets": [
+        "Delivered high-end architectural visualizations and 3D modeling for major international projects, including contributions to the Dubai Expo 2020.",
+        "Utilized professional-grade software such as 3DS Max, and AutoCAD to create highly realistic product renderings and spatial designs.",
+        "Bridged the gap between deep spatial intuition and technical execution, laying the groundwork for developing AI-driven spatial design platforms."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "HDE - Construction Estimator",
+      "description": "A comprehensive SaaS platform tailored for the Indian market, providing highly accurate material and labor cost estimations. Built a logic-heavy estimation engine based on real-time data.",
+      "tech": ["React", "TypeScript", "Supabase", "Tailwind CSS", "RBAC"],
+      "impact": "Evolved from its original prototype by rigorously optimizing SPA routing, managing strict version control to maintain a highly reliable core architecture, and implementing a Role-Based Access Control system.",
+      "image": "/hde_estimator.png",
+      "links": [
+        { "label": "Web Application", "url": "https://homedesignenglish.com" }
+      ]
+    },
+    {
+      "title": "AI Home Decorator",
+      "description": "An end-to-end spatial design mobile application allowing users to visualize interior transformations in real-time. Engineered prompts and API pipelines to handle complex image-to-image AI transformations.",
+      "tech": ["React Native / PWA", "Node.js", "AI Pipelines", "Google Ads"],
+      "impact": "Managed the entire product lifecycle—from development to Google Play Store deployment, managing international payment gateways, and executing digital advertising campaigns.",
+      "image": "/ai_home_decorator.png",
+      "links": [
+        { "label": "Web Application", "url": "https://aihomedecorator.com/" },
+        { "label": "Play Store", "url": "https://play.google.com/store/apps/details?id=com.aihomedecorator.twa" }
+      ]
+    },
+  
+    {
+      "title": "Wall Paint AI",
+      "description": "An AI-driven tool focused on real-time color visualization for architectural surfaces, utilizing a deep background in professional 3D visualization.",
+      "tech": ["React", "TypeScript", "Firebase"],
+      "impact": "Achieved highly realistic color blending on irregular surfaces by combining advanced CSS masking techniques with AI-driven edge detection.",
+      "image": "/wall_paint_ai.png",
+      "links": [
+        { "label": "Web Application", "url": "https://wallpaint.in/" }
+      ]
+    }
+  ],
+ "skills": [
+    {
+      "title": "Programming & Architecture",
+      "skills": ["JavaScript", "TypeScript", "React", "Tailwind CSS", "Node.js", "SOLID Principles", "MVC Architecture"]
+    },
+    {
+      "title": "AI Engineering & Automation",
+      "skills": ["Claude Code Agent", "Multi-Agent Systems", "Agentic Frameworks (Antigravity)", "Task Workflow Automation", "Google AI Studio", "Gemini Models"]
+    },
+    {
+      "title": "Backend & Cloud",
+      "skills": ["Supabase Edge Functions", "Firebase", "Google Cloud Platform (GCP)", "MySQL"]
+    },
+    {
+      "title": "Product & Project Management",
+      "skills": ["AI-Driven Project Management", "Play Store Deployment", "CI/CD", "System Analysis and Design", "Google Ads", "SEO"]
+    }
+  ],
+  "contact": {
+    "title": "Let's Build Something Together",
+    "description": "Whether you have a project in mind, need to optimize a scalable architecture, or are looking for a developer who bridges 10+ years of spatial intuition with cutting-edge multi-agent AI engineering—I'm open to chatting!",
+    "email": "thyagaraja1983@gmail.com"
+  }
+}

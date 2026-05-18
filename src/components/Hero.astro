@@ -1,0 +1,47 @@
+---
+import content from '../data/content.json';
+---
+<section class="hero section flex flex-col justify-center min-h-[80vh]">
+  <div class="container">
+    <div class="hero-content max-w-2xl">
+      <h1 class="hero-title">
+        {content.hero.titleLine1} <br/>
+        <span class="text-gradient">{content.hero.titleLine2}</span>
+      </h1>
+      <p class="hero-subtitle">
+        {content.hero.subtitle}
+      </p>
+      <div class="hero-cta flex gap-4">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+    
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+  }
+  .max-w-2xl {
+    max-width: 42rem;
+  }
+  .hero-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    letter-spacing: -0.02em;
+    margin-bottom: 1.5rem;
+  }
+  .hero-subtitle {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    margin-bottom: 2.5rem;
+    max-width: 36rem;
+  }
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 2.5rem;
+    }
+  }
+</style>

@@ -1,0 +1,59 @@
+---
+import content from '../data/content.json';
+---
+<section id="contact" class="section">
+  <div class="container">
+    <div class="contact-box glass flex flex-col items-center text-center">
+      <h2 class="section-title">{content.contact.title}</h2>
+      <p class="contact-desc">
+        {content.contact.description}
+      </p>
+      <a href={`mailto:${content.contact.email}`} class="btn btn-primary contact-btn">
+        Contact
+      </a>
+      
+      <!-- Added Email Display -->
+      <div class="email-display">
+        <a href={`mailto:${content.contact.email}`}>{content.contact.email}</a>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<style>
+  .contact-box {
+    padding: 4rem 2rem;
+    max-width: 48rem;
+    margin: 0 auto;
+  }
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .contact-desc {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+    max-width: 36rem;
+    line-height: 1.6;
+  }
+  .contact-btn {
+    font-size: 1.1rem;
+    padding: 1rem 2rem;
+    margin-bottom: 1.5rem; /* Added spacing between button and email */
+  }
+  
+  /* New styles for the email below the button */
+  .email-display a {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  .email-display a:hover {
+    color: var(--text-primary); /* Adjust based on your CSS variables */
+    text-decoration: underline;
+  }
+</style>
