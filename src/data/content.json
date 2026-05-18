@@ -64,7 +64,7 @@
  "skills": [
     {
       "title": "Programming & Architecture",
-      "skills": ["JavaScript", "TypeScript", "React", "Tailwind CSS", "Node.js", "SOLID Principles", "MVC Architecture"]
+      "skills": ["C Programming", "JavaScript", "TypeScript", "React", "Tailwind CSS", "Node.js", "SOLID Principles", "MVC Architecture"]
     },
     {
       "title": "AI Engineering & Automation",
